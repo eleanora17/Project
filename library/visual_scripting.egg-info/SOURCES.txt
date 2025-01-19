@@ -1,0 +1,15 @@
+setup.py
+test/test.py
+visual_scripting/__init__.py
+visual_scripting.egg-info/PKG-INFO
+visual_scripting.egg-info/SOURCES.txt
+visual_scripting.egg-info/dependency_links.txt
+visual_scripting.egg-info/requires.txt
+visual_scripting.egg-info/top_level.txt
+visual_scripting/browser/__init__.py
+visual_scripting/browser/browser_actions.py
+visual_scripting/common/__init__.py
+visual_scripting/common/initialize.py
+visual_scripting/core/__init__.py
+visual_scripting/core/selenium_actions.py
+visual_scripting/utils/__init__.py

@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: visual_scripting
+Version: 0.0.1
+Summary: A sample Python automation package
+Author: Deeptesh Shet
+Author-email: deeptesh.shet.0000@gmail.com
+Requires-Dist: selenium
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
