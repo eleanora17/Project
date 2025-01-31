@@ -14,6 +14,11 @@ def setup(browser='chrome'):
     else:
         return core.driver
 
+def get_driver(browser='Firefox'):
+    if core.driver is not None:
+        return core.driver
+    else:
+        core.driver=setup(browser)
 
 def teardown():
     core.driver.quit()
