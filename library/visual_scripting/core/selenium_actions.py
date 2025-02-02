@@ -28,6 +28,9 @@ def find_element(id=None, xpath=None, element_text=None, element_attribute_name=
         return driver.find_element(By.XPATH,xpath)
     elif(element_attribute_name!=None and element_attribute_value!=None):
         xpath = f"//*[@{element_attribute_name}='{element_attribute_value}']"
+        return driver.find_element(By.XPATH,xpath)      
+    elif(element_attribute_name!=None and element_attribute_value!=None and element_text!=None):
+        xpath=f"//*[@{element_attribute_name}='{element_attribute_value}' and text()='{element_text}']"
         return driver.find_element(By.XPATH,xpath)
     elif(element_text !=None):
         xpath = f"//*[text()='{element_text}']"
