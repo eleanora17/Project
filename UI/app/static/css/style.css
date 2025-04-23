@@ -1,0 +1,195 @@
+
+.padding_0_25{
+  padding: 0.25em !important;
+}
+
+.drop-text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.137); /* Light gray color */
+  pointer-events: none;
+}
+
+#batchFileContent {
+  max-height: 400px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.breadcrumb.active {
+  
+  color: #4da1bb !important;    /* Ensure text is visible */
+
+}
+
+
+/* Change active tab text color */
+.tabs .tab a.active {
+  color: #0a2f45 !important; /* Change to your desired color */
+}
+
+/* Change inactive tab text color */
+.tabs .tab a {
+  color: #0e0d0d !important; /* Change to your desired color */
+}
+
+/* Change the tab indicator color */
+.tabs .indicator {
+  background-color: #367588 !important; /* Change to your desired color */
+}
+
+.tabs .tab a:hover {
+  color: #213e8b !important; /* Change to your desired color */
+}
+.tabs .tab a.active {
+  background-color: transparent !important;
+}
+/* 
+.dropped-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  background-color: #dcdcdc;
+  justify-content: space-between;
+  cursor: grab;
+  padding-left:0px;
+  margin: 5px;
+  width: 100%; 
+  min-height: 2rem;
+  border-radius: 2px;
+  min-width: 200px; 
+  border: 1px solid #bcbcbc;
+  position: relative;
+} */
+
+/* Feature file name stays at the top */
+.dropped-item > .file-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+/* Delete button stays at top right */
+/* .dropped-item .delete-scenario {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  color: red;
+} */
+
+/* Key-Value container inside dropped item */
+.key-value-box {
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-top: 1px solid #ccc;
+  margin-top: 5px;
+  word-wrap: break-word;
+  display: flex; /* Display key-value pairs in a row */
+  flex-wrap: wrap; /* Wrap to next line if needed */
+}
+
+/* Each key-value pair inside .key-value-box */
+.key-value-box p {
+  margin: 2px 10px 2px 0; /* Add spacing between pairs */
+  padding: 2px 5px;
+
+  border-radius: 3px;
+}
+
+
+.sidenav {
+  width: 250px; /* Set width */
+}
+.sidenav a, .sidenav .subheader {
+  color: white !important;
+}
+.sidenav :active{
+  background-color: #367588;
+}
+
+.dropped-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  border: 1px solid #ccc;
+  background-color: #ebeaea;
+  margin: 5px 0;
+  border-radius: 5px;
+  min-height: 2rem;
+  width: 100%;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 8px; /* Space between buttons */
+}
+
+.view-scenario,
+.delete-scenario,
+.edit-scenario {
+  cursor: pointer;
+  font-size: 16px;
+  color: #303030;
+  transition: color 0.3s ease-in-out;
+}
+.view-scenario:hover {
+  color: green;
+}
+
+.delete-scenario:hover {
+  color: red;
+}
+
+.edit-scenario:hover {
+  color: blue;
+}
+
+.step-type-selector {
+  width: 9%;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#terminal-wrapper {
+  background: #000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  font-family: monospace;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+#terminal-toggle-container {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+.log-container {
+  background: #000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  height: 40vh;
+  overflow-y: auto;
+  font-family: monospace;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  display: block;
+}
+
+.log-terminal-container {
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  background: #1c1c1c;
+  border-radius: 0px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}

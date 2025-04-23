@@ -1,0 +1,15 @@
+{% extends "settings_main.html" %}
+
+{% block title %} Settings {% endblock %}
+
+
+{% from "components/settings_macro.html" import settings %}
+
+    {% block data %}
+
+        {{settings()}}
+
+    {% endblock %}
+
+    
+   

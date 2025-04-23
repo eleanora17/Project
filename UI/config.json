@@ -1,0 +1,11 @@
+{
+  "batch_path": "C:\\Project\\automation\\src\\batch",
+  "boot_file": "C:\\Project\\UI\\app\\batch_UI\\run_app.bat",
+  "features_path": "C:\\Project\\automation\\src\\features",
+  "reports_path": "C:\\MOS_automation",
+  "steps_json_path": "C:\\Project\\UI\\app\\static\\data",
+  "steps_path": "C:\\Project\\automation\\src\\features\\steps",
+  "venv_path": "C:\\Project\\automation",
+  "UI_path": "C:\\Project\\UI",
+  "root":"C:\\Project"
+}

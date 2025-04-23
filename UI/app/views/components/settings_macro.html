@@ -1,0 +1,24 @@
+
+
+{% macro settings() %}
+
+<div id="config-container" class="row">
+    <div class="card" style="height: calc(100vh - 4rem);">
+        <div class="card-content" id="config-content"></div>
+    </div>
+</div>
+<!-- Footer terminal container -->
+<div id="terminal-toggle-container" style="position: fixed; bottom: 0; left: 0; right: 0; background: #1c1c1c; border-top: 1px solid #333; z-index: 999;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0px 0px 0px 7px;">
+        <span style="color: rgb(255, 255, 255); font-family: monospace;">Terminal Output</span>
+        <button class="btn-flat" onclick="toggleTerminal()" style="color: rgb(255, 255, 255); min-width:auto;">
+            <i id="terminal-toggle-icon" class="fa-solid fa-caret-down"></i>
+        </button>
+    </div>
+    <div id="terminal-wrapper" style="display: block; background: #000; color: rgb(255, 255, 255); padding: 10px; height: 30vh; overflow-y: auto; font-family: monospace; margin-top: 0px;">
+        <pre id="git-log-output" style="margin: 0;"></pre>
+    </div>
+</div>
+
+
+{% endmacro %}

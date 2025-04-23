@@ -1,0 +1,89 @@
+{
+    "AMNOVIS": [
+        "AMNOVIS.feature",
+        "AMNOVIS_Workflow.feature"
+    ],
+    "BH": [
+        "Azure_connect_workflow.feature",
+        "BHWorkflow_OrderV1.feature",
+        "BH_FullWorkflow_withSAP.feature",
+        "PPO1_order.feature",
+        "ZPIO_order.feature"
+    ],
+    "FREEFORM": [
+        "Freeform_Workflow.feature"
+    ],
+    "Freeform_Integration": [
+        "001_SFTP_Integration_Workflow.feature",
+        "002_SFTP_Integration_Materialise_Workflow.feature",
+        "003_SFTP_Integration_Sculpteo_Workflow.feature",
+        "004_SFTP_Integration_Shapeways_Workflow.feature"
+    ],
+    "JABIL": [
+        "001_Jabil_workflow.feature",
+        "00_Jabil_workflow.feature"
+    ],
+    "MULTIFACILITY": [
+        "Admin_Multifacility_Workflow.feature",
+        "Generic_Workflow_OP1_Fac1.feature",
+        "Generic_Workflow_OP2_Fac2.feature"
+    ],
+    "NAMI": [
+        "NamiRequestWorkflow.feature",
+        "NamiWorkflow1.feature",
+        "PersonaAccess.feature",
+        "PersonaDetails.feature",
+        "UsersRolePersonas.feature"
+    ],
+    "performance": [
+        "OrderWorkflowCompletion.feature",
+        "PartModelsfromJson.feature",
+        "Performance_Automation_QA_Listing.feature",
+        "Performance_Freeform_Testing_Eu4_Listing.feature",
+        "Performance_Listing_Pages.feature"
+    ],
+    "POM": [
+        "action.feature",
+        "action_model.feature",
+        "alert_model.feature",
+        "cell.feature",
+        "cell_model.feature",
+        "customers.feature",
+        "location.feature",
+        "login.feature",
+        "manage_setup.feature",
+        "manage_setup_optimised.feature",
+        "manufacturer.feature",
+        "material.feature",
+        "material_model.feature",
+        "order.feature",
+        "parts.feature",
+        "part_models.feature",
+        "route_model.feature",
+        "supplier.feature",
+        "tool.feature",
+        "tool_model.feature"
+    ],
+    "regression": [
+        "3DXpertIntegration_Workflow_1.feature",
+        "3DXpertIntegration_Workflow_2.feature",
+        "3DXpertIntegration_Workflow_3.feature",
+        "Approve_In_Nest_Editor_Workflow_Subcontractor.feature",
+        "Approve_Nest_Workflow_with_Schedule_Generic.feature",
+        "Approve_Nest_Workflow_with_Schedule_Subcontractor.feature",
+        "Generic_Maintenance_Workflow.feature",
+        "Generic_Workflow.feature",
+        "Nest_Action_Generic_Workflow.feature",
+        "Nest_Action_Subcontractor_Workflow.feature",
+        "Part_Model_Creation_Workflow.feature",
+        "Schedule.feature",
+        "SLM_Workflow.feature",
+        "Subcontractor_Create_Generic_Part_Model_Workflow.feature",
+        "Subcontractor_Workflow.feature",
+        "V2sorting.feature",
+        "Workflow_1-1.feature"
+    ],
+    "SDK_Testing": [
+        "stratasys.feature"
+    ]
+}

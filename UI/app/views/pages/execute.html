@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} Execute {% endblock %}
+
+
+{% from "components/execute_macros.html" import feature_files, run_feature %}
+
+    {% block data %}
+
+        {{feature_files(data,batch)}}
+        
+    {% endblock %}
+
+    {% block step %}
+        
+        {{run_feature()}}
+
+    {% endblock %}
+
+   

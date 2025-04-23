@@ -1,0 +1,646 @@
+{
+  "assertion": [
+      "'Wait for Button=\"<button_text>\" to be clickable,Timeout=\"<timeout>\"'",
+      "'Wait for Element=\"<element_text>\" to be present,Timeout=\"<timeout>\"'",
+      "'Assert data equals expected: data=\"<data>\", expected=\"<expected>\". title=\"<title>\"'",
+      "'Checking item does not exists, \"<item>\", \"<title>\"'",
+      "'Verify Element exists on page, element=\"<element>\", title=\"<title>\"'",
+      "'Verify Element=\"<element>\" exists on page,title=\"<title>\"'",
+      "'Verify item exists, \"<item>\", \"<title>\"'",
+      "'Verify Action Model=\"<model_name>\" was created successfully'",
+      "'Verify Instruction Model=\"<model_name>\" was created successfully'",
+      "'Verify Tool Model=\"<model_name>\" was created successfully'",
+      "'Verify Cell Model=\"<model_name>\" was created successfully'",
+      "'Verify Material Model=\"<model_name>\" was created successfully'",
+      "'Verify Alert Model=\"<model_name>\" was created successfully'",
+      "'Verify Route Model was created successfully'",
+      "'Verify file=\"<file_name>\" was uploaded'",
+      "'Verify Tool Model was updated successfully with \"<notes>\"'",
+      "'Verify Tool Model \"<tool_model_name>\" was duplicated successfully'",
+      "'Verify Tool Model \"<tool_model_name>\" was obsoleted successfully'",
+      "'Verify Tool for \"<tool_model_name>\" was created successfully'",
+      "'Verify Material Model \"<material_model_name>\" was loaded successfully with \"<rev>\"'",
+      "'Verify Material Model was updated successfully with \"<notes>\" and \"<rev>\"'",
+      "'Verify Material Model \"<material_model_name>\" was duplicated successfully'",
+      "'Verify Material Model \"<material_model_name>\" was obsoleted successfully'",
+      "'Verify Material for \"<material_model_name>\" was created successfully'",
+      "'Verify Cell Model \"<cell_model_name>\" was loaded successfully with \"<rev>\"'",
+      "'Verify Cell Model was updated successfully with \"<notes>\" and \"<rev>\"'",
+      "'Verify Cell Model \"<cell_model_name>\" was duplicated successfully'",
+      "'Verify Cell Model \"<cell_model_name>\" was obsoleted successfully'",
+      "'Verify Cell for \"<cell_model_name>\" was created successfully'",
+      "'Verify Button=\"<button>\" enabled'",
+      "'Verify Button=\"<button>\" disabled'",
+      "'verify that the files, \"<files>\" are displayed on the product editor page and assert with \"<title>\"'",
+      "'verify that the file, \"<file>\" is displayed on the product details page and assert with \"<title>\"'",
+      "'verify \"<field_to_edit>\" value to be \"<edited_value>\". title=\"<title>\"'",
+      "'verify \"<part_model_name>\" under section \"<section_name>\".\"<title>\"'",
+      "'verify on \"<page>\" page under \"<section>\", \"<attribute>\" for part \"<file_name>\" to be \"<expected_attr_value>\". \"<title>\"'",
+      "'verify \"<attribute>\" for \"<part_model_name>\" on Part Details page to be \"<expected_attr_value>\".title=\"<title>\"'",
+      "'page title should be \"<left_menu_option>\"'",
+      "'Check all order items initialised \"<part_models_count_expected>\" \"<parts_count_expected>\" \"<schedule_actions_count_expected>\" \"<element_text1_actual>\" \"<element_text2_actual>\" \"<element_text3_actual>\"'",
+      "'verify \"<context_header>\", \"<field_to_verify>\" to be \"<expected_value_key>\", Ref=\"<dict_key_to_refer>\" title=\"<title>\"'",
+      "'verify element with text=\"<element_text>\" exists on current page, context=\"<element_context>\", title=\"<title>\"'",
+      "'verify orders details displayed for order id=\"<order_id>\", title=\"<title>\"'",
+      "'verify order data, section=\"<section_header>\", field=\"<data_field>\" to be \"<expected_value>\", title=\"<title>\"'",
+      "'verify element=\"<element_text>\" is present, title=\"<title>\"'",
+      "'Verifying files are uploaded,\"<file1>\"\"<file2>\" \"<file3>\" \"<file4>\"'",
+      "'verify if the field=\"<fieldName>\" has value=\"<fieldValue>\", title=\"<title>\"'",
+      "'verify if the field=\"<fieldName>\" has value=\"<fieldValue>\", with unique context=\"<uniqueContext>\", title=\"<title>\"'",
+      "'Assert that value=\"<expected>\" is present on ui and the report title=\"<title>\"'",
+      "'verify customer name=\"<expected_customer_name>\" for order=\"<order_id>\", title=\"<title>\"'",
+      "'verify due date should be \"<date_key>\" for part_model=\"<part_model>\", Ref to key=\"<master_key>\"'"
+  ],
+  "azure_step": [
+      "'connect to Azure table with user=\"<user>\" and key=\"<key>\"'",
+      "'get all Azure tables and store in key=\"<key>\"'",
+      "'get data of Azure table=\"<table_name>\" in key=\"<table_key>\"'",
+      "'fetch all from table=\"<table_name>\" column=\"<column_heading>\" operator=\"<operator>\" \"<value>\", store in key=\"<store_in_key>\"'",
+      "'connect to Azure table with user=\"<user>\", key file=\"<key_file>\", key=\"<key>\"'"
+  ],
+  "basic": [
+      "'Enable all Screenshot'",
+      "'Enable save dict to json after scenario, filename=\"<filename>\", filepath=\"<filepath>\"'",
+      "'Enable save dict to json after all, filename=\"<filename>\", filepath=\"<filepath>\"'",
+      "'Go to <url>'",
+      "'login with \"<email>\" \"<password>\"'",
+      "'Click on: item=\"<item>\", context=\"<context__>\"'",
+      "'Click \"<item>\"'",
+      "'Navigate to List=\"<item>\"'",
+      "'Click Element,Element_Xpath=\"<element_xpath>\"'",
+      "'Click Element,Element_Text=\"<element_text>\" Element_Context=\"<element_context>\"'",
+      "'Click Element,Element_Text=\"<element_text>\" Tag=\"<tag>\"'",
+      "'Click Element,Element_Context=\"<element_context>\" Tag=\"<tag>\" Element_Attribute=\"<attribute>\"'",
+      "'Click Element,Tag=\"<tag>\" Element_Attribute=\"<attribute>\" Element_Attribute_Value=\"<attribute_value>\"'",
+      "'Click Element that start with=\"<text>\"'",
+      "'Refresh Current Page'",
+      "'Select from Dropdown=\"<dropdown_name>\",Value=\"<value>\"'",
+      "'Input text to Element=\"<element_text>\",input=\"<input_text>\"'",
+      "'Load dictionary from the JSON file \"<filename>\" located at \"<filepath>\"'",
+      "'Save dictionary into JSON file \"<filename>\" located at \"<filepath>\"'",
+      "'I generate a random string of \"<length>\" digits, store in key=\"<key>\"'",
+      "'replace \"<key_to_replace>\" with \"<repalcing_string>\" in \"<file_path>\"'",
+      "'Click element with xpath=\"<xpath>\"'",
+      "'Click element with xpath=\"<xpath>\", option__=\"<click_option>\"'",
+      "'Get element starts_with=\"<starts_with>\" and save in dict with key=\"<key>\"'",
+      "'upload file=<file_name>, context=\"<upload_context>\", location=\"<file_path>\", title=\"<title>\"'",
+      "'wait for presence of=\"<element_text>\"'",
+      "'wait for element with text=\"<element_text>\" to disappear from UI, timeout=\"<timeout_input>\"'",
+      "'wait for element with text=\"<element_text>\" to be clickable on UI, timeout=\"<timeout_input>\"'",
+      "'fetch element text that starts with=\"<starts_with_text>\", instance=\"<get_instance>\", store in key=\"<key>\"'",
+      "'replace existing sub-string=\"<old_string>\" with new sub-string=\"<new_string>\" in string=\"<complete_string>\", store in \"<key>\"'",
+      "'concat first string=\"<string1>\" with second string=\"<string2>\", store in \"<key>\"'",
+      "'Set Current time in Dictionary'",
+      "'Fill with ID \"<data>\" \"<element_id>\"'",
+      "'Fill with XPATH \"<data>\" \"<element_xpath>\"'",
+      "'Fill \"<element_text>\" with text \"<data>\"'",
+      "'Fill \"<element_text>\" with textarea \"<textarea>\"'",
+      "'Upload file \"<file_name>\" \"<upload_to>\"'",
+      "'Upload file \"<file_name>\" \"<upload_to>\" \"<file_path>\"'",
+      "'Select \"<item>\"'",
+      "'Select dropdown \"<item_type>\" \"<input>\"'",
+      "'Wait for \"<seconds>\"'",
+      "'Open create page \"<page>\",\"<button_name>\"'",
+      "'Capture itemID on \"<page>\" and save as \"<key>\" \"<value>\"'",
+      "'rename source, Key=\"<source_file_name>\" to Key=\"<new_file_name>\" from location=\"<source_location>\"'",
+      "'set field=\"<input_label>\" value=\"<input_value>\", store in key=\"<value_key>\"'",
+      "'I start the step at \"<target_time>\" on \"<target_date>\"'",
+      "'click \"<button_text>\", context=\"<context_ele_text>\"'",
+      "'fetch index=\"<index>\" form list=\"<filter_list>\" and store in key=\"<key>\"'",
+      "'Download file=\"<file_name>\"'",
+      "'Get field=\"<fieldName>\" value starts with=\"<fieldValue>\" and save in dict key=\"<key>\"'",
+      "'Get field=\"<fieldName>\" value starts with=\"<fieldValue>\", context=\"<unique_context>\" and save in dict key=\"<key>\"'"
+  ],
+  "BH_assertions": [
+      "'Verify OrderV2 created successfully with \"<description_expected>\"'",
+      "'Verify line item of \"<requested_service>\" has been addeed successfully'",
+      "'Verify that request has been submitted successfully'",
+      "'Verify that \"<line_item>\" was successfully moved to Costing'",
+      "'Verify that \"<line_item>\" was successfully moved to Quoting'",
+      "'Verify that the quote was submitted successfully'",
+      "'Verify that the payment was accepted successfully for \"<submitted_quote>\"'",
+      "'Verify that the payment was confirmed successfully for \"<submitted_quote>\"'",
+      "'Verify that the \"<designer>\" was assigned successfully for \"<line_item>\"'",
+      "'Verify that the part model was assigned successfully for \"<line_item>\"'",
+      "'Verify that \"<line_item>\" was successfully moved to Production'",
+      "'Verify that order was created successfully for \"<line_item>\"'",
+      "'Verify Order created successfully \"<number_of_line_items_expected>\"'"
+  ],
+  "bh_v1Order": [
+      "'Create a new BHv1 order with \"<customer_name>\" \"<partmodel_name>\" and \"<qty>\" parts'",
+      "'Edit v1order Part from Part Editor for \"<part_id>\"'",
+      "'Verify v1order SAP Part Details page has loaded for \"<part_id>\" on \"<tab_number>\"'",
+      "'Start & Finish Actions \"<action_id>\"'",
+      "'Verify SAP Trigger to check closed order'",
+      "'Sort ActionIDs \"<action_id>\"'"
+  ],
+  "connect_api": [
+      "'user logs in with API using username=\"<username>\",password=\"<password>\", tenant=\"<tenant>\", host=\"<host>\", url =\"<service_url>\"'",
+      "'find \"<item>\" with PO Number=\"<po_number>\", store in key=\"<order_key>\" and assert, title=\"<title1>\"'",
+      "'connect to integrations api using clientId=\"<clientId>\", clientSecret=\"<clientSecret>\" and host=\"<host>\"'"
+  ],
+  "customer": [
+      "'Create Customer with name=\"<customer_name>\", avoid create=<flag>'",
+      "'Create Customer with name=\"<customer_name>\"'"
+  ],
+  "helper": [
+      "'Save Key=\"<key>\" Value=\"<value>\" to Json_File=\"<json>\",Json_Path=\"<json_path>\"'",
+      "'Save to JSON: \"<key>\", \"<value>\" to \"<json>\" \"<json_path>\"'",
+      "'Save Key=\"<key>\" from context to Json_File=\"<json>\" Json_Path=\"<json_path>\"'",
+      "'Read Json_File=\"<json>\" to context,Json_Path=\"<json_path>\"'",
+      "'Read Key=\"<keys>\" from Json_File=\"<json>\" to context,Json_Path=\"<json_path>\"'",
+      "'Set timestamp'"
+  ],
+  "manufacturer": [
+      "'Create Manufacturer with name=\"<manufacturer_name>\", avoid create=<flag>'",
+      "'Create Manufacturer with name=\"<manufacturer_name>\"'",
+      "'Create Manufacturer for Facility__=\"<facility>\" using admin account,\"<manufacturer_name_to_enter>\"'",
+      "'Create Manufacturers,\"<manufacturer_name_to_enter>\"'"
+  ],
+  "material": [
+      "'Create Material of Material Model=\"<material_model>\", avoid create=<flag>'",
+      "'Create Material of Material Model=\"<material_model>\"'"
+  ],
+  "material_model": [
+      "'Create Material Model of type=\"<type>\" and name=\"<material_name>\", avoid create=<flag>'",
+      "'Create Material Model of type=\"<type>\" and name=\"<material_name>\"'"
+  ],
+  "nami_request_workflow": [
+      "'Create a new request for Nami with \"<description>\" and \"<requester_company>\"'",
+      "'Nami-Add Line item \"<file_name>\",\"<file_path>\",\"<quantity>\",\"<due_date>\",\"<base_material>\" and \"<material>\"'",
+      "'Submit the customer request with \"<delivery_method>\" as Pickup'",
+      "'Enter Pickup details \"<pickup_address>\"'",
+      "'Assign Nami \"<responsible_engineer>\"'",
+      "'Move Nami \"<line_item>\" to Costing'",
+      "'Set Price \"<line_item>\" with \"<quoted_quantities>\",\"<unit_part_cost>\",\"<unit_part_price>\" and \"<total_price>\"'",
+      "'Create Quote for the Nami \"<line_item>\" with \"<pricing_QuoteID>\" \"<total_cost>\" \"<total_price>\" \"<final_price>\" \"<lead_time>\"'",
+      "'Get Submitted Quote ID'",
+      "'Nami Generate and Submit Quote to Customer'",
+      "'Accept the Nami \"<submitted_quote>\"'",
+      "'Confirm payment for Nami \"<line_item>\" \"<submitted_quote>\" with \"<payment_line_number>\"'",
+      "'Create part model for Nami \"<line_item>\" \"<customer>\" \"<material_model>\"'",
+      "'Nami-Assign the part model \"<pm_name>\" to \"<line_item>\"'",
+      "'Nami-Send to Customer for Approval \"<line_item>\" \"<file_name1>\",\"<file_name2>\",\"<file_path>\"'",
+      "'Click on Approve Route \"<line_item>\"'",
+      "'Nami-Move \"<line_item>\" to Production'",
+      "'Create OrderV1 for \"<line_item>\",\"<customer>\"'"
+  ],
+  "performance": [
+      "'navigate to Organisation page'",
+      "'save time now, key= \"<time_key>\"'",
+      "'user navigates to \"<left_menu_option>\" under \"<left_menu_section>\"'",
+      "'hold for the listing table to load'",
+      "'save duration for \"<start_time>\" and \"<end_time>\" in \"<duration>\"'",
+      "'verify duration= \"<actual_duration>\" is within \"<expected_time_to_load>\" milliseconds, title=\"<title>\", Records processed = \"<on_filter_count_key>\", save Records fetched in \"<records_fetched_key>\"'",
+      "'apply filter \"<filter>\" with value as \"<filter_value>\"'",
+      "'set flag for filters as \"<filter_category>\"'",
+      "'apply old filter \"<filter>\" with value as \"<filter_value>\"'",
+      "'apply new filter \"<filter>\" with value as \"<filter_value>\"'",
+      "'get the number of records in \"<no_of_records_key>\"'"
+  ],
+  "qaLib": [
+      "'Start ScreenRecording'",
+      "'Stop ScreenRecording'",
+      "'Pause ScreenRecording'",
+      "'Resume ScreenRecording'",
+      "'Read feature params in dictionary'"
+  ],
+  "sap_bh_workflow": [
+      "'Create a new request with \"<facility>\" \"<description>\" and \"<product_line>\"'",
+      "'Get OrderV2 ID from Order Details page'",
+      "'Get OrderV1 ID from Order Details page'",
+      "'Add Line Item with \"<requested_service>\" \"<part_file_name>\" \"<required_quantity>\" \"<need_by_date_delay>\" \"<customer_part_number>\" \"<customer_partname>\" and \"<part_type_input>\"'",
+      "'Get LineItem ID from Order Details page'",
+      "'Submit the customer request with \"<delivery_method>\" as Ship'",
+      "'Enter shipping details \"<ship_street>\" \"<ship_city>\" \"<ship_state>\" \"<ship_zipCode>\" and \"<ship_country>\"'",
+      "'Open the \"<orderID_v2>\" request'",
+      "'Assign \"<responsible_amcel>\"'",
+      "'Edit \"<line_item>\" and add the required data \"<base_material>\" \"<business_impact>\" \"<AMCEL_SOR_reviewer>\" \"<need_by_date_delay_amcelSOR>\" \"<Design_SOR_reviewer>\" \"<need_by_date_delay_designSOR>\" \"<AM_technology_fit>\"'",
+      "'Move \"<line_item>\" to Costing'",
+      "'Open Worklist'",
+      "'Create Price for the \"<line_item>\" with \"<quoted_quantities>\" \"<unit_part_cost>\" \"<unit_part_price>\" \"<total_price>\" \"<pricing_comments>\"'",
+      "'Get Quote ID'",
+      "'Move \"<line_item>\" to Quoting'",
+      "'Create Quote for the \"<line_item>\" with \"<pricing_QuoteID>\" \"<total_cost>\" \"<total_price>\" \"<grand_total_price>\" \"<lead_time>\"'",
+      "'Generate and Submit Quote to Customer'",
+      "'Accept the \"<submitted_quote>\"'",
+      "'Enter payment information \"<payment_method>\" \"<PO_number>\" \"<PO_file>\" for \"<submitted_quote>\"'",
+      "'Confirm payment for \"<line_item>\" \"<submitted_quote>\" with \"<payment_line_number>\"'",
+      "'Assign design expert \"<designer>\" for \"<line_item>\"'",
+      "'Create new part model for \"<line_item>\" with details \"<pm_name>\" \"<part_file_name>\" \"<am_part_num>\" \"<am_part_name>\" \"<am_part_rev>\" \"<batch_quantity>\" \"<release_status>\" \"<release_date>\" at \"<timestamp>\"'",
+      "'Assign the part model \"<pm_name>\" to \"<line_item>\"'",
+      "'Move \"<line_item>\" to Production'",
+      "'Create OrderV1 for \"<line_item>\"'",
+      "'Open the production order \"<orderID_V1>\" for \"<line_item>\"'",
+      "'Create Parts and save PartIDs'",
+      "'Logout'"
+  ],
+  "sap_zpio_ppo1": [
+      "'Create a new order with \"<customer_name>\" \"<partmodel_name>\" and \"<qty>\" parts'",
+      "'Get Part IDs on Order Details page'",
+      "'Edit Part from Part Editor for \"<part_id>\"'",
+      "'Verify SAP Part Details page has loaded for \"<part_id>\" on \"<tab_number>\"'",
+      "'Get Action IDs on Part Details page'",
+      "'Edit details for \"<action_id>\" at \"<timestamp>\"'",
+      "'Verify action details have been updated for \"<action_id>\" at \"<timestamp>\"'",
+      "'Edit part details'",
+      "'Update the ZPIO SAP Header details for \"<order_type>\" at \"<timestamp>\"'",
+      "'Update the Settlement Rules at \"<timestamp>\"'",
+      "'Update the Goods Receipt and Long Text at \"<timestamp>\"'",
+      "'Update the PP01 SAP Header details for \"<order_type>\" at \"<timestamp>\"'",
+      "'Update the PP01 SAP Header details for \"<order_type>\" at \"<timestamp>\"'",
+      "'Verify part details have been updated with \"<order_type>\"'",
+      "'Verify SAP Trigger'",
+      "'the \"<Key>\", open details page'",
+      "'get xml attachments'"
+  ],
+  "sdk_testing": [
+      "'I set the screenshot flag to <flag>'",
+      "'IOT Gateway is <gateway>'",
+      "'the GraphQL Service Port is <port>'",
+      "'the File Upload Service Port is <port>'",
+      "'I set the plant to <plant>'",
+      "'I set the device to <device>'",
+      "'I set the function to <function>'",
+      "'I set the mask to <mask>'",
+      "'I set the params to <params>'",
+      "'I subscribe'",
+      "'send dmc command <dmc_command>'",
+      "'closing subscription'",
+      "'I upload the file \"<filename>\" from \"<location>\"'",
+      "'the file \"<filename>\" should be uploaded successfully'",
+      "'I submit job'"
+  ],
+  "sftp_integraton": [
+      "'connect SFTP with hostname=\"<sftp_hostname>\", port=\"<sftp_port>\", username=\"<sftp_username>\" and filename=\"<key_filename>\"'",
+      "'finally close SFTP connecton'",
+      "'create a folder named \"<folder_name>\" in the SFTP server'",
+      "'create folder on SFTP server with timestamp at location=\"<dest_location>\", key=\"<directory_key>\"'",
+      "'switch to location=\"<location>\" on SFTP'",
+      "'list files at current location on SFTP'",
+      "'navigate one level up on SFTP server'",
+      "'upload file \"<local_file_path>\" to the current location on the SFTP server, key=\"<data_key>\"'",
+      "'verify item=\"<item_name>\" exists in CWD, title=\"<title>\"'"
+  ],
+  "supplier": [
+      "'Create Supplier with name=\"<supplier_name_to_enter>\", avoid create=<flag>'",
+      "'Create Supplier with name=\"<supplier_name_to_enter>\"'"
+  ],
+  "tools": [
+      "'Create Build Plate of tool model=\"<tool_model>\"'",
+      "'Create Build Plate of tool model=\"<tool_model>\" avoid create=<flag>'"
+  ],
+  "tool_models": [
+      "'Create Tool Model with name=\"<tool_model_name>\" type=\"<tool_model_type>\"'",
+      "'Create Tool Model with name=\"<tool_model_name>\" type=\"<tool_model_type>\" avoid create=<flag>'",
+      "'Create Tool Model Build Plate,\"<tool_model_name_to_enter>\" \"<length_val>\" \"<width_val>\" \"<height_val>\"'",
+      "'Create Tool Model generic,\"<tool_model_name>\"'"
+  ],
+  "utils": [
+      "'Read data and store in dictionary: data=\"<data>\", key=\"<dict_key>\"'",
+      "'Add to dictionary: key=\"<key>\", value=\"<value>\"'",
+      "'Get dictionary data: key=\"<key>\"'",
+      "'Read all data and store in dictionary: data=\"<data>\", key=\"<dict_key>\"'",
+      "'Read row=\"<row_index>\" from CSV and store in dictionary: data=\"<csv_path>\", key=\"<key>\"'",
+      "'store length of list=\"<target_list_key>\" in key=\"<store_in_key>\"'",
+      "'Save data in dict, \"<key>\", \"<value>\"'",
+      "'load dict'",
+      "'Save data in dict from list, \"<key>\", <items>'"
+  ],
+  "v2sort": [
+      "'Click on Sort button'",
+      "'Click on sort fields button'",
+      "'Click on sort button with multiple fields'"
+  ],
+  "actions": [
+      "'Start Action'",
+      "'Pause Action'",
+      "'Resume Action'",
+      "'Finish Action,\"<file1>\" \"<file2>\" \"<file3>\" \"<file4>\"'",
+      "'Selecting the action in Pending status'",
+      "'Selecting the action in Ready to Start status and starting the same'",
+      "'Reject parts from action page, <qty> \"<reject_reason>\"'",
+      "'Finish Rejected Action'",
+      "'Cancel Action'",
+      "'Cancel Nest Action'",
+      "'Verify Action button available on Action-details Page: \"<action_name>\", title=\"<title>\"'",
+      "'Finish Action'"
+  ],
+  "action_models": [
+      "'Create Action Model Generic,\"<action_model_name_to_enter>\"'",
+      "'Edit Action Model,\"<file1>\" \"<file2>\"'",
+      "'Delete Action Model'",
+      "'Show Archived Action Models'",
+      "'Verifying Action Model created,\"<action_model_name>\" \"<title>\"'"
+  ],
+  "alert_models": [
+      "'Create Alert Model Event,\"<alert_model_name_to_enter>\" \"<email>\"'",
+      "'Create Alert Model Periodical,\"<alert_model_name_to_enter>\" \"<email>\"'",
+      "'Delete Alert Model Periodical'",
+      "'Show Obsoleted Alert Model'"
+  ],
+  "assert": [
+      "'Hard Failure'",
+      "'Assert is True,\"<data>\",\"<title>\"'",
+      "'Assert \"<name>\":,\"<output>\" \"<expected>\" \"<title>\"'",
+      "'Verifying \"<page_type>\" created,\"<output_data_key>\" \"<expected_data_key>\" \"<title>\"'",
+      "'Verify this \"<ActualOutput>\" \"<ExpectedOutput>\" \"<title>\" \"<json>\"'",
+      "'Verifying \"<page_type>\" icon,\"<element_to_find>\" \"<expected_data>\" \"<title>\"'",
+      "'Check status as \"<status_type>\",\"<expected_data>\" \"<title>\"'",
+      "'Check value of element \"<element_name>\" \"<title>\"'",
+      "'Button is not present'",
+      "'field should contain the text \"<field>\" \"<expected_text>\"'",
+      "'input field \"<field>\" contain the text \"<expected_text>\"'",
+      "'get the current URL'",
+      "'Assert Element does not exists, <element>, \"<title>\"'",
+      "'Assert list exists, <element_list>, \"<title>\"'",
+      "'Assert button=\"<button>\" clickable, \"<title>\"'",
+      "'verify presence of all in \"<list_reference>\" on current view, title=\"<title>\"'",
+      "'verify presence of \"<qty>\" instances of \"<text_reference>\" on current view, title=\"<title>\"'",
+      "'Verify files are getting listed \"<file1>\"\"<file2>\"\"<file3>\"\"<file4>\"'"
+  ],
+  "cells": [
+      "'Create Cell Generic,\"<cell_name_to_enter>\" \"<serial_no>\" \"<file1>\" \"<file2>\"'",
+      "'Create Cell SLM,\"<cell_name_to_enter>\" \"<serial_no>\" \"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Move Cell'",
+      "'Delete Cell'",
+      "'Show Disposed Cells'"
+  ],
+  "cell_models": [
+      "'Create Cell Model Generic,\"<cell_model_name_generic_to_enter>\" \"<manufacturer>\" <cell_fixed_cost> <cell_hourly_cost> <labour_hourly_cost>'",
+      "'Create Cell Model SLM,\"<cell_model_name_generic_to_enter>\" <cell_fixed_cost> <cell_hourly_cost> <labour_hourly_cost>'"
+  ],
+  "CustomerPersonaLogin": [
+      "'login with Persona \"<email>\" \"<password>\"'",
+      "'Logged in Persona1?'",
+      "'Logged in Persona2?'",
+      "'Logged in Persona3?'"
+  ],
+  "customers": [
+      "'Customer Name \"<customer_name>\"'",
+      "'Create Customer,\"<customer_name_to_enter>\"'",
+      "'Archive Customer'",
+      "'Show Archived Customers'"
+  ],
+  "edit_scheduler": [
+      "'action \"<nest_action_id>\" is displayed on the scheduler, title=\"<title>\"'",
+      "'all actions \"<action_ids>\" should be displayed on the scheduler, title=\"<title>\"'",
+      "'add Subcontractor=\"<subcontractor>\", Assignee=\"<assignee>\", Start Date & Time=\"<date>\"'",
+      "'add Cell=\"<cell>\", Assignee=\"<assignee>\", Start Date & Time=\"<date>\"'",
+      "'perform actions'",
+      "'add action,\"<action_id>\" to schedule editor'",
+      "'click \"<button_text>\" on Schedule editor'",
+      "'Verify status=\"<expected_status>\" on schedule editor for Action=\"<action_id>\", title=\"<title>\"'",
+      "'action \"<nest_action_id>\" is displayed on the scheduler, compare with=\"<index>\", title=\"<title>\"'"
+  ],
+  "facilities": [
+      "'Create Facility,\"<facility_name_to_enter>\"'",
+      "'Update facility value,\"<user>\" \"<facility>\"'"
+  ],
+  "location": [
+      "'Create Location,\"<location_name_to_enter>\"'",
+      "'Delete Location'",
+      "'Show Disposed Location'"
+  ],
+  "login": [
+      "'Verifying Login by checking inbox icon'"
+  ],
+  "materials": [
+      "'Create Material of model \"<modelname>\" <initial_weight> <price> \"<file1>\" \"<file2>\"'",
+      "'Move material'",
+      "'Delete material'",
+      "'Show Disposed Materials'"
+  ],
+  "material_models": [
+      "'Create Material Model Powder,\"<material_model_name_to_enter>\"'",
+      "'Create Material Model Resin,\"<material_model_name>\"'"
+  ],
+  "nest": [
+      "'Create Nest from Parts created'",
+      "'Approve Nest'",
+      "'View Nest details page of the approved Nest'",
+      "'open Nest ID, <nestid>'",
+      "'Create nest to Cancel'",
+      "'Approve Nest to cancel'",
+      "'Show Cancelled Nest'"
+  ],
+  "order_page": [
+      "'Create an Order with <qty> Parts'",
+      "'Add Existing Parts to line item'",
+      "'user creates an order with existing part model \"<part_model>\",using material model=\"<material_model>\", route model=\"<route_model>\", qty=\"<qty>\" and customer=\"<customer>\"'",
+      "'duplicate current order on order page, option=\"<duplicate_option>\", Reference=\"<dup_ref_text>\", Notes=\"<notes>\", key=\"<new_order_key>\"'",
+      "'user access part model that starts with \"<part_model>\" from order page'",
+      "'access print report=\"<access_report>\", title=\"<title>\"'",
+      "'start create order with existing part model \"<part_model>\",using material model=\"<material_model>\", route model=\"<route_model>\", qty=\"<qty>\" and customer=\"<customer>\"'",
+      "'verify \"<qty>\" parts are in \"<expected_state>\" state on order details page'",
+      "'save order id, key=\"<order_key>\"'",
+      "'save parts from order details page, key=\"<parts_key>\"'",
+      "'save nest id from order details page, key=\"<key>\"'"
+  ],
+  "parts": [
+      "'Create Parts,<qty> \"<notes>\" \"<file1>\" \"<file2>\" \"<file3>\" \"<file4>\"'",
+      "'Get Part IDs from Part Model details'",
+      "'Show part details'",
+      "'Create Parts from Part Models,<qty>'",
+      "'Show Cancelled Parts'",
+      "'Verify Part is Cancelled, \"<partid>\"'",
+      "'Print Report of Nested Part'",
+      "'open Part ID, <partid>'",
+      "'Assert that Part IDs match the expected values'",
+      "'Part id is created'",
+      "'Verify part details'"
+  ],
+  "part_models": [
+      "'Create Part Model,\"<pm_type>\" \"<part_model_name_to_enter>\" \"<file>\"'",
+      "'Edit Part Model and approve,\"<file1>\" \"<file2>\"'",
+      "'Approve Part Model'",
+      "'Edit Route Plan and approve'",
+      "'Create Rework Part Model,\"<rework_part_model_name_to_enter>\"'",
+      "'Delete Part Model'",
+      "'Show Obsolete Part Models'",
+      "'Verifying Part Model created,\"<part_model_name>\" \"<title>\"'",
+      "'Verifying files are uploaded on Part Model,\"<file1>\"\"<file2>\"'",
+      "'Verifying Part Model is approved'",
+      "'Open part model details page,\"<part_model_name>\"'",
+      "'Create multiple part models,\"<pm_type>\" \"<file1>\" \"<file2>\"'",
+      "'Create Parts shown disabled for non approved Part Model'",
+      "'Open Part Models, \"<customer>\"'",
+      "'approve the part model'",
+      "'edit part model currently displayed'",
+      "'download the source file from product editor, Save source in key=\"<source_key>\"'"
+  ],
+  "personas": [
+      "'Verify Personas, \"<persona>\" \"<personaOutput>\"'",
+      "'Open Persona navigation path tab Overview details, \"<persona>\" \"<partLibrary>\"'",
+      "'Open persona: persona=\"<persona>\"'",
+      "'Verify Persona navigation path tab Item details, \"<persona>\" \"<partModelDetailPage>\"'",
+      "'Verify Persona Global Navigation path tab details, \"<persona>\" \"<partModels>\"'",
+      "'Check Persona view for Logged In User, \"<partLibrary>\"'",
+      "'Click logout'"
+  ],
+  "print_report": [
+      "'verify value of \"<field_to_verify>\" to be \"<expected_val>\" on \"<access_report>\"'"
+  ],
+  "product_editor": [
+      "'click on Save on product editor'",
+      "'click on Close on product editor'"
+  ],
+  "route_model": [
+      "'Create Route Model,\"<route_model_name_to_enter>\"'",
+      "'Delete Route Model'",
+      "'Show Deleted Route Model'"
+  ],
+  "search": [
+      "'I search for =\"<search_for>\", within=\"<within_value>\", created_by=\"<creator:NullableString>\", in time range=\"<time_range:NullableString>\"'",
+      "'click \"<click_on>\" on Search page, context=\"<context_element:NullableString>\"'"
+  ],
+  "suppliers": [
+      "'Create Supplier for  Facility__=\"<facility>\" using admin account,\"<supplier_name_to_enter>\"'",
+      "'Create Suppliers,\"<supplier_name_to_enter>\"'"
+  ],
+  "tool": [
+      "'Create Tool Build Plate \"<notes>\" \"<file1>\" \"<file2>\"'",
+      "'Move Tool'",
+      "'Delete Tool'",
+      "'Show Disposed Tools'"
+  ],
+  "users": [
+      "'Verify assigned Role to User: \"<expected_role>\"'",
+      "'Open user: user=\"<user>\"'"
+  ],
+  "reg_actions": [
+      "'Start an Action,\"<action_id>\"'",
+      "'Start subcontractor Action,\"<action_id>\" \"<dd_values>\"'",
+      "'Finish an Action,\"<file1>\" \"<file2>\" \"<file3>\" \"<file4>\" \"<file_path>\"'",
+      "'user perform an event,\"<event>\" on Action, \"<action_id>\"'",
+      "'verify status as \"<status>\" for action \"<action_id>\" , title = \"<title>\"'",
+      "'perform an event,\"<event>\" on Action, \"<action_id>\"'",
+      "'start and finish all actions in \"<actions_ids>\"'",
+      "'wait until \"<qty>\" actions are displayed on nest details page'"
+  ],
+  "reg_action_models": [
+      "'Create Action Model for Facility__=\"<facility>\" using admin account,\"<action_model_name_to_enter>\"'",
+      "'Create Action Model of type Generic,\"<action_model_name_to_enter>\"'",
+      "'Create Action Model AMusing3DXpert_old \"<action_model_name>\" \"<cell_model>\" \"<material_model>\" \"<tool_model>\" \"<part_model_script>\" \"<nest_script>\" \"<scripts_path>\"'",
+      "'Create Action Model AMusing3DXpert,Action_Model_Name=\"<action_model_name>\" Cell_Model=\"<cell_model>\" Material_Model=\"<material_model>\" Tool_Model=\"<tool_model>\"'",
+      "'Create Action Model AMusing3DXpert,Action_Model_Name=\"<action_model_name>\" Cell_Model=\"<cell_model>\" Material_Model=\"<material_model>\" Tool_Model=\"<tool_model>\" Part_Model_Script__=\"<part_model_script>\" Nest_Script__=\"<nest_script>\" Scripts_Path__=\"<scripts_path>\"'",
+      "'Create Action Model of type Generic Maintenance,\"<action_model_name_to_enter>\"'",
+      "'Create Action Model of type Subcontractor,\"<action_model_name_to_enter>\"'"
+  ],
+  "reg_cells": [
+      "'Create Cell for Facility__=\"<facility>\" using admin account,\"<cell_name_to_enter>\" \"<serial_no>\" \"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Create Cell from Cell Model of type Generic,\"<cell_name_to_enter>\" \"<serial_no>\" \"<file1>\" \"<file_path>\" \"<file2>\"'"
+  ],
+  "reg_cell_models": [
+      "'Create Cell Model for Facility__=\"<facility>\" using admin account,\"<cell_model_name_generic_to_enter>\" <cell_fixed_cost> <cell_hourly_cost> <labour_hourly_cost>'",
+      "'Create Cell Model of type Generic,\"<cell_model_name_generic_to_enter>\" <cell_fixed_cost> <cell_hourly_cost> <labour_hourly_cost>'",
+      "'Create Cell Model of type \"<cell_model_type>\",\"<cell_model_name>\"'",
+      "'View Cell Model \"<cell_model_name>\" on Cell list page'",
+      "'Edit Cell Model \"<cell_model_name>\" from Cell Model details page by updating \"<notes>\"'",
+      "'Duplicate Cell Model \"<cell_model_name>\"'",
+      "'Obsolete Cell Model \"<cell_model_name>\"'",
+      "'Create Cell Model Instance \"<cell_model_name>\"'"
+  ],
+  "reg_customers": [
+      "'Create Customer for  Facility__=\"<facility>\" using admin account,\"<customer_name_to_enter>\"'",
+      "'Create Customer for regression,\"<customer_name_to_enter>\"'"
+  ],
+  "reg_materials": [
+      "'Create Material of \"<type>\" type for Facility__=\"<facility>\" using admin account,\"<material_model_output_key>\" <initial_weight> <price> \"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Create Material of model \"<type>\",\"<material_model_output_key>\",<initial_weight> <price> \"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Create Material \"<type>\",\"<material_model_output_key>\",<initial_weight> <price> \"<file1>\" \"<file_path>\" \"<file2>\"'"
+  ],
+  "reg_material_models": [
+      "'Create Material Model with type as Resin,\"<material_model_name_to_enter>\"'",
+      "'Create Material Model for Facility__=\"<facility>\" using admin account,\"<material_model_name_to_enter>\"'",
+      "'Create Material Model Generic,\"<material_model_name_to_enter>\"'",
+      "'Create Material Model of type \"<material_model_type>\",\"<material_model_name>\"'",
+      "'View Material Model \"<material_model_name>\" on Material list page'",
+      "'Edit Material Model \"<material_model_name>\" from Material Model details page by updating \"<notes>\"'",
+      "'Duplicate Material Model \"<material_model_name>\"'",
+      "'Obsolete Material Model \"<material_model_name>\"'",
+      "'Create Material Model Instance \"<material_model_name>\"'"
+  ],
+  "reg_nest": [
+      "'Create a nest of two parts'",
+      "'Now Approve the Nest'",
+      "'View details page of the approved Nest'",
+      "'Get Action ID \"<action_model_name>\"'",
+      "'view details page of the Nest, \"<nest_id>\" and approve it with option=\"<submit_action>\"'",
+      "'Create a nest of two parts and \"<option>\"'",
+      "'create nest of parts=\"<parts_list>\"'",
+      "'Approve from nest details page, Nest ID=\"<nest_id>\"'"
+  ],
+  "reg_nest_editor_page": [
+      "'Get Nest ID'",
+      "'Verify Nest Processing Done'",
+      "'Verify Nest Parts Number,Expected_Parts=\"<expected_num>\"'",
+      "'Wait for updated Nest revision,Timeout=\"<timeout>\"'"
+  ],
+  "reg_orders": [
+      "'Add Line Item,File_Name=\"<file_name>\" File_Path=\"<file_path>\" Quantity=\"<quantity>\" Material_Model=\"<material_model>\" Route_Model=\"<route_model_name>\" Line_Item_Number=\"<row>\"'",
+      "'Add Line Item,File_Name=\"<file_name>\" File_Path=\"<file_path>\" Quantity=\"<quantity>\" Material_Model=\"<material_model>\" Route_Model=\"<route_model_name>\" Line_Item_Number=\"<row>\" Due_Date__=\"<delay_days>\"'",
+      "'Add Line Item,File_Name=\"<file_name>\" File_Path=\"<file_path>\" Quantity=\"<quantity>\" Material_Model=\"<material_model>\" Route_Model=\"<route_model_name>\" Line_Item_Number=\"<row>\" Lots__=\"<lots>\"'",
+      "'Add Line Item,File_Name=\"<file_name>\" File_Path=\"<file_path>\" Quantity=\"<quantity>\" Material_Model=\"<material_model>\" Route_Model=\"<route_model_name>\" Line_Item_Number=\"<row>\" Due_Date__=\"<delay_days>\" Lots__=\"<lots>\"'",
+      "'Get Part Model ID,Part_Model_Name=\"<part_model_name>\"'",
+      "'Add Line items from json file, filename=\"<filename>\" filepath=\"<filepath>\"'",
+      "'Verify All Part Models Approved'",
+      "'Verify All Parts Created'",
+      "'Wait for All Parts to be Ready,Number_of_Parts=\"<num>\" Timeout=\"<timeout>\"'",
+      "'Verify Order created successfully,Number_Of_Line_Items_Expected=\"<number_of_line_items_expected>\"'",
+      "'expand part model that starts with \"<part_model>\" from order page'",
+      "'order due date should be \"<date_key>\", Ref to key=\"<master_key>\", title=\"<title>\"'",
+      "'get \"<nested_key>\" from key=\"<master_key>\" and store in key=\"<store_key>\"'",
+      "'Get Part IDs,Number_of_Parts=\"<number_of_parts>\"'",
+      "'Duplicate Order=\"<order_id>\"'",
+      "'Duplicate Order=\"<order_id>\" with Parts and Nest'",
+      "'Verify Order=\"<duplicated_order_id>\" was duplicated successfully'"
+  ],
+  "reg_parts": [
+      "'Create Parts from Part list page for Facility__=\"<facility>\" using admin account,\"<part_model_name_input>\" <qty> \"<notes>\" \"<file1>\" \"<file_path>\" \"<file2>\" \"<file3>\" \"<file4>\"'",
+      "'Create Parts from Part list page,\"<part_model_name_input>\" <qty> \"<notes>\" \"<file1>\" \"<file_path>\" \"<file2>\" \"<file3>\" \"<file4>\"'",
+      "'Read Part IDs from \"<part_model_input>\" details and store'",
+      "'Click on Parts page to view the details'",
+      "'Create Parts from Part Model details page  for Facility__=\"<facility>\" using admin account,<qty> \"<Part_Model_input>\"'",
+      "'Create Parts from Part Model details page,<qty> \"<Part_Model_input>\"'"
+  ],
+  "reg_part_models": [
+      "'Create Part Model for Facility__=\"<facility>\" using admin account, \"<action_model_type>\" Action Model,\"<material_model_input>\" \"<route_model_input>\" \"<pm_type>\" \"<part_model_name_to_enter>\" \"<file>\" \"<file_path>\"'",
+      "'Create Part Model using \"<action_model_type>\" Action Model,\"<material_model_input>\" \"<route_model_input>\" \"<pm_type>\" \"<part_model_name_to_enter>\" \"<file>\" \"<file_path>\"'",
+      "'Edit Part Model with \"<type>\" Action Model and approve  for Facility using admin account,\"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Edit Part Model with \"<type>\" Action Model and approve,\"<file1>\" \"<file_path>\" \"<file2>\"'",
+      "'Create Part Model using \"<no_of_files>\" files for \"<action_model_type>\" Action Model,\"<material_model_input>\" \"<route_model_input>\" \"<pm_type>\" \"<part_model_name>\" \"<files>\" \"<file_path>\"'",
+      "'click on \"<button_text>\" button'",
+      "\"finally close product editor\"",
+      "'edit field, \"<field_to_edit>\" with valueas  \"<edited_value>\" on product editor page'",
+      "'access part model \"<model_name>\" from part models page'",
+      "'change the \"<change_attr>\" for \"<file_to_edit>\" on New Part Model s"
+  ],
+  "reg_plan_editor_page": [
+      "'Verify 3DXpert Uploaded Files,Expected_File_Name=\"<name>\"'",
+      "'Verify 3DXpert Uploaded Files,Expected_File_Name=\"<name>\" Expected_Printer_Format__=\"<printer_format>\"'",
+      "'Verify 3DXpert data estimations \"<expected_data>\"'"
+  ],
+  "reg_route_model": [
+      "'Create Route Model for Facility__=\"<facility>\" with \"<action_model_type>\" using admin account,\"<route_model_name_to_enter>\" \"<material_model>\" \"<action_model_name>\"'",
+      "'Create Route Model with \"<action_model_type>\" action model,\"<route_model_name_to_enter>\" \"<material_model>\" \"<action_model_name>\"'",
+      "'Create Route Model,Route_Model_Name=\"<route_model_name>\" Supported_Material_Model=\"<supported_material_model>\" Action_Models=\"<action_models>\"'",
+      "'Create Route Model,Route_Model_Name=\"<route_model_name>\" Supported_Material_Model=\"<supported_material_model>\" Action_Models=\"<action_models>\" Auto_Approve_Part_Model__=\"<auto_approve_part_model>\" Auto_Create_Parts__=\"<auto_create_parts>\"'"
+  ],
+  "reg_subcontractor": [
+      "'Create Subcontractor for  Facility__=\"<facility>\" using admin account,\"<subcontractor_name_to_enter>\"'",
+      "'Create Subcontractor,\"<subcontractor_name_to_enter>\"'"
+  ],
+  "reg_tool": [
+      "'Create Tool of type Build Plate,\"<notes>\" \"<file1>\" \"<file_path>\" \"<file2>\"'"
+  ],
+  "reg_tool_models": [
+      "'Create Tool Model of type Build Plate,\"<tool_model_name_to_enter>\" \"<length_val>\" \"<width_val>\" \"<height_val>\"'",
+      "'Create Tool Model of type \"<tool_model_type>\",\"<tool_model_name>\"'",
+      "'Edit Tool Model \"<tool_model_name>\" by updating \"<notes>\"'",
+      "'Edit Tool Model \"<tool_model_name>\" from Tool Model details page by updating \"<notes>\"'",
+      "'Duplicate Tool Model \"<tool_model_name>\"'",
+      "'Obsolete Tool Model \"<tool_model_name>\"'",
+      "'Create Tool Model Instance \"<tool_model_name>\"'"
+  ]
+}

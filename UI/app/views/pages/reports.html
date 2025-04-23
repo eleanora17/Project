@@ -1,0 +1,20 @@
+{% extends "report_main.html" %}
+
+{% block title %} Reports {% endblock %}
+
+
+{% from "components/report_macros.html" import report,view_report %}
+
+    {% block data %}
+
+        {{report(data)}}
+
+    {% endblock %}
+
+    {% block step %}
+    <div id="view-report-wrapper">
+        
+    </div>
+    {% endblock %}
+    
+   

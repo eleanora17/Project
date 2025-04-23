@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Visual Scripting {% endblock %}
+
+
+{% from "components/create_macro.html" import steps,feature %}
+
+    {% block data %}
+
+        <div id="stepsContainer">
+            {{ steps(data) }}
+        </div>
+
+    {% endblock %}
+
+
+    {% block step %}
+        
+        <!-- <div id="featureContainer"> -->
+            {{ feature() }}
+        <!-- </div> -->
+
+    {% endblock %}

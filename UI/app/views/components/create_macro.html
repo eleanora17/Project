@@ -1,0 +1,111 @@
+
+{% macro steps(data) %}
+
+    <div class="card-header"style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="card-title">
+            <b style="color:rgb(18, 86, 134);">STEP FILES</b>
+        </span>
+    
+        <div style="display: flex; gap: 10px;"> 
+            <button id="refreshSteps" class="modal-close btn-small waves-effect waves-light" style="background-color:#367588;">
+                Refresh<i class="fa-solid fa-arrows-rotate" style="font-size: medium; padding-left: 5px;"></i>
+            </button>
+            <button id="regenerateSteps" class="modal-close btn-small waves-effect waves-light" style="background-color:#367588;">
+                Regenerate<i class="fa-solid fa-arrow-rotate-right" style="font-size: medium; padding-left: 5px;"></i>
+            </button>
+        </div> 
+    </div>
+    <ul class="collapsible expandable">
+        {% for key, value in data.items() %}
+            <li>
+                <div class="collapsible-header white-text" style="background-color: #0a2f45; padding: 0.5em;">
+                    <span style="padding-right: 0.2em;">
+                        <i class="fa-solid fa-folder"></i>
+                    </span>
+                    <span>{{ key }}</span>
+                </div>
+                <div class="collapsible-body padding_0_25">
+                    <div style="display: flex; flex-direction: column; justify-content: center; width: 100%;">
+                        {% for item in value %}
+                            <div class="draggable-item" id="item-{{ loop.index }}" draggable="true" ondragstart="drag(event)"
+                                style="display: flex; align-items: center; padding: 0.5rem; margin: 0.25rem; 
+                                box-shadow: 0 0 4px 1px gray; border-radius: 2px; height: 2.5rem;">
+                                <i class="fa-solid fa-file-code" style="padding-right: 10px;font-size: large;"></i>
+                                <span>{{ item }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-body" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        </div>
+        <div class="modal-footer">
+            <button id="save-modal" class="btn waves-effect waves-light" style="background-color:#367588;">
+                Save
+            </button>
+            <button class="modal-close btn waves-effect waves-light" style="background-color:gray">
+                Cancel
+            </button>
+        </div>
+    </div>
+    
+{% endmacro %}
+
+
+
+{% macro feature() %}
+
+    <div id="main-container">
+        <div  style="display: flex; align-items: center">
+            <!-- <span class="card-title"><b>Feature</b></span> -->
+            <button id="open-modal" class="btn-small waves-effect waves-light" style="background-color:#367588; width: 40%;margin: 20px; ">
+                Create Feature
+            </button>
+        </div>
+    </div>
+
+
+    <div id="feature-modal" class="modal">
+        <div class="modal-content">
+            <h5>Enter Feature Name</h5>
+            <input type="text" style="width: 50%;" id="modal-feature-input" placeholder="Feature Name" class="browser-default">
+        </div>
+        <div class="modal-footer">
+            <button id="create-feature" class="modal-close btn waves-effect waves-light" style="background-color:#367588">
+                Save
+            </button>
+        </div>
+    </div>
+    <div id="saveModal" class="modal">
+        <div class="modal-content">
+            <h5>Enter Feature File Name</h5>
+            <input type="text" id="featureFileName" style="width: 50%;" placeholder="Enter feature file name" class="browser-default">
+            <div class="modal-footer">
+                <button onclick="saveScenarios()" class="modal-close btn waves-effect waves-light" style="background-color:#367588">
+                    Save
+                </button>
+                <button class="modal-close btn waves-effect waves-light" onclick="closeSaveModal()" style="background-color:gray">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Monaco Modal -->
+    <div id="monaco-modal" class="modal" >
+        <div class="modal-content" style="padding: 0;">
+        <div id="monaco-container" style="height: 100%; width: 100%;"></div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close btn" style="background-color: #888;">Close</button>
+        </div>
+          
+    </div>
+  
+
+
+{% endmacro %}
+
