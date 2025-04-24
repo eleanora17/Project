@@ -1321,12 +1321,6 @@ function loadGit() {
                                 onclick="runGitPull('${gitPath}')">
                             Git Pull
                         </button>
-                        <button id="git-commit-btn" class="waves-effect waves-light btn" 
-                                style="margin-top: 10px;background-color:#367588;" 
-                                onclick="openCommitModal('${gitPath}')">
-                            Git Commit
-                        </button>
-
                         <button class="waves-effect waves-light btn" 
                                 style="margin-top: 10px;background-color:#367588;" 
                                 onclick="restartApp()">
